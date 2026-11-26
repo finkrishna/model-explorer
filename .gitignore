@@ -1,0 +1,8 @@
+# local-only material: run traces, verification evidence, screenshots, internal notes
+internal/
+__pycache__/
+.pytest_cache/
+*.log
+.DS_Store
+.venv/
+venv/

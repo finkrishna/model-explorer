@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://127.0.0.1:* http://localhost:*; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<title>Model catalog &mdash; open-weight explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="app">
+  <div>
+    <h1>Open-weight model explorer</h1>
+    <div class="sub">Catalog of open-weight models &mdash; architecture, weights &amp; provenance</div>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="index.html">Compare</a>
+    <a href="catalog.html" aria-current="page">Catalog</a>
+  </nav>
+</header>
+<main id="main">
+  <div class="statusbar" id="statusbar" role="status"></div>
+  <section class="panel" id="timeline-panel">
+    <h2>When each model arrived &mdash; and how big it is</h2>
+    <p class="lede" style="margin-top:0">Verified first-publication date on Hugging Face (x) against parameter
+      count (y, log scale). All values are metadata from the official model pages.</p>
+    <div id="timeline"></div>
+  </section>
+  <section class="panel" id="bench-panel">
+    <h2>Publisher-reported benchmarks</h2>
+    <p class="notice" style="margin:0 0 12px">These are each publisher's <strong>own</strong> numbers, under
+      <strong>different benchmarks and protocols</strong> (MMLU vs MMLU-Pro/Redux/Global, 0- vs 5-shot, base vs
+      instruct, MATH for reasoning models). They point you to each model's card &mdash; they are <strong>not a
+      head-to-head comparison</strong>, so don't rank models by them. &ldquo;See card&rdquo; means no clean figure was found.</p>
+    <div class="table-wrap"><table class="cmp bench" id="bench"></table></div>
+  </section>
+  <p class="lede" id="intro"></p>
+  <div class="grid" id="grid"></div>
+</main>
+<script type="module" src="catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Static-site CSP: same as the server header. connect-src allows this origin plus the
+     user's own loopback backend, and NOTHING else, so a prompt can never reach an
+     external inference endpoint or telemetry. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://127.0.0.1:* http://localhost:*; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<title>Open-weight model explorer &mdash; compare three models</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="app">
+  <div>
+    <h1>Open-weight model explorer</h1>
+    <div class="sub">Compare three small open models on one prompt &mdash; answers and measured internals, locally</div>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="index.html" aria-current="page">Compare</a>
+    <a href="catalog.html">Catalog</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="statusbar" id="statusbar" role="status"></div>
+
+  <section class="panel">
+    <h2>1. Choose three models</h2>
+    <p class="lede">Each dropdown lists all ten catalogued models and any can be selected. The three
+      cached Qwen2 checkpoints (<span class="mono">&#10004; runs here</span>) produce measured internals;
+      the rest are <strong>reference-only</strong> &mdash; their column shows verified specs from the model
+      card, but nothing is run for them. Base and instruction-tuned models are tagged.</p>
+    <div class="selectors" id="selectors"></div>
+  </section>
+
+  <section class="panel">
+    <h2>2. Enter one shared prompt</h2>
+    <div class="promptrow">
+      <textarea id="prompt" aria-label="Shared prompt" placeholder="Type a prompt for all three models&hellip;"></textarea>
+      <div class="examples" id="examples" aria-label="Example prompts"></div>
+    </div>
+    <div class="controls">
+      <label class="field"><span>Max new tokens</span><input id="maxtok" type="number" min="1" max="96" value="40"></label>
+      <button class="run" id="runbtn" type="button">Compare</button>
+    </div>
+    <div class="progress" id="progress" role="status" aria-live="polite"></div>
+  </section>
+
+  <section id="results" aria-live="polite"></section>
+
+  <p class="footnote">Decoding is greedy (deterministic) by default. The prompt, the answers and all
+    activations exist only in local memory for the latest run; nothing is written to disk, logged, or
+    sent off your machine.</p>
+</main>
+
+<script type="module" src="compare.js"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+{
+ "verified_from": "Official Hugging Face API (https://huggingface.co/api/models/<repo>?blobs=true) and each model's config.json at the pinned revision, read 2026-11-25.",
+ "count": 10,
+ "runnable_count": 5,
+ "models": [
+  {
+   "id": "qwen2.5-0.5b-instruct",
+   "label": "Qwen2.5-0.5B-Instruct",
+   "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+   "family": "Qwen2.5",
+   "tuning": "instruction-tuned",
+   "architecture": "Qwen2ForCausalLM",
+   "model_type": "qwen2",
+   "runnable": true,
+   "slot": "a",
+   "status_reason": "In local cache; Qwen2 architecture; full provenance verified.",
+   "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+   "released": "2024-09-16",
+   "benchmark": {
+    "label": "MMLU-Redux",
+    "value": 24.1,
+    "protocol": "instruct (Qwen2.5 report)"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+    "config": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/config.json"
+   },
+   "metadata": {
+    "parameters": 494032768,
+    "layers": 24,
+    "hidden_size": 896,
+    "attention_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "mlp_intermediate": 4864,
+    "vocab_size": 151936,
+    "context_length": 32768,
+    "tied_embeddings": true,
+    "rope_theta": 1000000.0,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": false,
+    "weight_bytes": 988097824,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": true,
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "weights_bytes": 988097824
+   }
+  },
+  {
+   "id": "qwen2.5-1.5b-instruct",
+   "label": "Qwen2.5-1.5B-Instruct",
+   "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+   "family": "Qwen2.5",
+   "tuning": "instruction-tuned",
+   "architecture": "Qwen2ForCausalLM",
+   "model_type": "qwen2",
+   "runnable": true,
+   "slot": "b",
+   "status_reason": "In local cache; Qwen2 architecture; full provenance verified.",
+   "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+   "released": "2024-09-17",
+   "benchmark": {
+    "label": "MMLU-Redux",
+    "value": 50.7,
+    "protocol": "instruct (Qwen2.5 report)"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+    "config": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/config.json"
+   },
+   "metadata": {
+    "parameters": 1543714304,
+    "layers": 28,
+    "hidden_size": 1536,
+    "attention_heads": 12,
+    "kv_heads": 2,
+    "head_dim": 128,
+    "mlp_intermediate": 8960,
+    "vocab_size": 151936,
+    "context_length": 32768,
+    "tied_embeddings": true,
+    "rope_theta": 1000000.0,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": false,
+    "weight_bytes": 3087467144,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": true,
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "weights_bytes": 3087467144
+   }
+  },
+  {
+   "id": "qwen2.5-0.5b-base",
+   "label": "Qwen2.5-0.5B (base)",
+   "repo": "Qwen/Qwen2.5-0.5B",
+   "family": "Qwen2.5",
+   "tuning": "base (pretrained, NOT instruction-tuned)",
+   "architecture": "Qwen2ForCausalLM",
+   "model_type": "qwen2",
+   "runnable": true,
+   "slot": "c",
+   "status_reason": "In local cache; Qwen2 architecture; full provenance verified. Base model: it was not instruction-tuned, so it continues text rather than following chat instructions. Shares the 0.5B-Instruct tokenizer.",
+   "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+   "released": "2024-09-15",
+   "benchmark": {
+    "label": "MMLU",
+    "value": 47.5,
+    "protocol": "base · 5-shot (Qwen2.5 report)"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/060db6499f32faf8b98477b0a26969ef7d8b9987/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+    "config": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/060db6499f32faf8b98477b0a26969ef7d8b9987/config.json"
+   },
+   "metadata": {
+    "parameters": 494032768,
+    "layers": 24,
+    "hidden_size": 896,
+    "attention_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "mlp_intermediate": 4864,
+    "vocab_size": 151936,
+    "context_length": 32768,
+    "tied_embeddings": true,
+    "rope_theta": 1000000.0,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": false,
+    "weight_bytes": 988097824,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": true,
+    "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "weights_sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+    "weights_bytes": 988097824
+   }
+  },
+  {
+   "id": "inkling-2-mini",
+   "label": "Inkling-2-Mini",
+   "repo": "thinkingmachines/Inkling-2-Mini",
+   "family": "Inkling-2 · Thinking Machines",
+   "tuning": "instruction-tuned (mixture-of-experts)",
+   "architecture": "Inkling2LoopForConditionalGeneration",
+   "model_type": "inkling2_loop",
+   "runnable": false,
+   "slot": null,
+   "status_reason": "Thinking Machines' new open-weight Inkling-2 series (Apache-2.0, ungated). A ~26B-parameter mixture-of-experts with a custom 'inkling2_loop' architecture that does not expose standard transformer dims and is far outside the Qwen2 engine. Not cached. Catalog/reference only.",
+   "revision": "c9d028302cd0f035fdf8e7e91f089a4ce94d2195",
+   "released": "2026-11-17",
+   "benchmark": {
+    "label": null,
+    "value": null,
+    "protocol": "see model card (new release)"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/thinkingmachines/Inkling-2-Mini/blob/c9d028302cd0f035fdf8e7e91f089a4ce94d2195/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+    "config": "https://huggingface.co/thinkingmachines/Inkling-2-Mini/blob/c9d028302cd0f035fdf8e7e91f089a4ce94d2195/config.json"
+   },
+   "metadata": {
+    "parameters": 26388646440,
+    "layers": null,
+    "hidden_size": null,
+    "attention_heads": null,
+    "kv_heads": null,
+    "head_dim": null,
+    "mlp_intermediate": null,
+    "vocab_size": null,
+    "context_length": null,
+    "tied_embeddings": null,
+    "rope_theta": null,
+    "stored_dtype": null,
+    "weight_format": "safetensors",
+    "sharded": true,
+    "weight_bytes": 20161820584,
+    "mixture_of_experts": true
+   },
+   "provenance": {
+    "verified": false,
+    "note": "Metadata pinned to the revision above; weights are not loaded here."
+   }
+  },
+  {
+   "id": "qwen3-1.7b",
+   "label": "Qwen3-1.7B",
+   "repo": "Qwen/Qwen3-1.7B",
+   "family": "Qwen3",
+   "tuning": "post-trained (hybrid thinking; run with thinking off)",
+   "architecture": "Qwen3ForCausalLM",
+   "model_type": "qwen3",
+   "runnable": true,
+   "slot": "e",
+   "status_reason": "Current Qwen3 generation, run by this tool's Qwen3 adapter (no QKV bias, per-head Q/K RMSNorm before RoPE, explicit head_dim, sharded weights) and checked against Hugging Face transformers. Rendered with thinking mode off.",
+   "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+   "released": "2025-04-27",
+   "benchmark": {
+    "label": null,
+    "value": null,
+    "protocol": "see model card / Qwen3 report"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/Qwen/Qwen3-1.7B",
+    "config": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/config.json"
+   },
+   "metadata": {
+    "parameters": 2031739904,
+    "layers": 28,
+    "hidden_size": 2048,
+    "attention_heads": 16,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "mlp_intermediate": 6144,
+    "vocab_size": 151936,
+    "context_length": 40960,
+    "tied_embeddings": true,
+    "rope_theta": 1000000,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": true,
+    "weight_bytes": 4063515592,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": true,
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "weights_sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+    "weights_bytes": 4063515592
+   }
+  },
+  {
+   "id": "smollm3-3b",
+   "label": "SmolLM3-3B",
+   "repo": "HuggingFaceTB/SmolLM3-3B",
+   "family": "SmolLM3",
+   "tuning": "instruction-tuned",
+   "architecture": "SmolLM3ForCausalLM",
+   "model_type": "smollm3",
+   "runnable": false,
+   "slot": null,
+   "status_reason": "Hugging Face's fully-open SmolLM3 (open weights, data and recipe). Its SmolLM3 architecture and tokenizer differ from Qwen2; an adapter would be required, and it is not cached. Catalog/reference only.",
+   "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+   "released": "2025-07-08",
+   "benchmark": {
+    "label": "Global-MMLU",
+    "value": 53.5,
+    "protocol": "0-shot · multilingual"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+    "config": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json"
+   },
+   "metadata": {
+    "parameters": 3075098624,
+    "layers": 36,
+    "hidden_size": 2048,
+    "attention_heads": 16,
+    "kv_heads": 4,
+    "head_dim": 128,
+    "mlp_intermediate": 11008,
+    "vocab_size": 128256,
+    "context_length": 65536,
+    "tied_embeddings": true,
+    "rope_theta": 5000000.0,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": true,
+    "weight_bytes": 6150235008,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": false,
+    "note": "Metadata pinned to the revision above; weights are not loaded here."
+   }
+  },
+  {
+   "id": "phi-4-mini-instruct",
+   "label": "Phi-4-mini-instruct",
+   "repo": "microsoft/Phi-4-mini-instruct",
+   "family": "Phi-4",
+   "tuning": "instruction-tuned",
+   "architecture": "Phi3ForCausalLM",
+   "model_type": "phi3",
+   "runnable": false,
+   "slot": null,
+   "status_reason": "Microsoft Phi-4-mini (MIT). The Phi-3/4 architecture (fused QKV, partial rotary, 200K vocab) differs from Qwen2; an adapter would be required, and it is not cached. Catalog/reference only.",
+   "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+   "released": "2025-02-19",
+   "benchmark": {
+    "label": "MMLU",
+    "value": 67.3,
+    "protocol": "5-shot (model card)"
+   },
+   "license": {
+    "id": "mit",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+    "config": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/config.json"
+   },
+   "metadata": {
+    "parameters": 3836021760,
+    "layers": 32,
+    "hidden_size": 3072,
+    "attention_heads": 24,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "mlp_intermediate": 8192,
+    "vocab_size": 200064,
+    "context_length": 131072,
+    "tied_embeddings": true,
+    "rope_theta": 10000.0,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": true,
+    "weight_bytes": 7672066216,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": false,
+    "note": "Metadata pinned to the revision above; weights are not loaded here."
+   }
+  },
+  {
+   "id": "olmo-2-7b-instruct",
+   "label": "OLMo-2-7B-Instruct",
+   "repo": "allenai/OLMo-2-1124-7B-Instruct",
+   "family": "OLMo-2 · Allen AI",
+   "tuning": "instruction-tuned",
+   "architecture": "Olmo2ForCausalLM",
+   "model_type": "olmo2",
+   "runnable": false,
+   "slot": null,
+   "status_reason": "Allen AI OLMo-2 — a fully-open model (open weights, training data and code). The OLMo-2 architecture (QK-norm, reordered norms) differs from Qwen2; an adapter would be required, and it is not cached. Reference only.",
+   "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+   "released": "2024-12-18",
+   "benchmark": {
+    "label": null,
+    "value": null,
+    "protocol": "see model card"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct",
+    "config": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/config.json"
+   },
+   "metadata": {
+    "parameters": 7298617344,
+    "layers": 32,
+    "hidden_size": 4096,
+    "attention_heads": 32,
+    "kv_heads": 32,
+    "head_dim": 128,
+    "mlp_intermediate": 11008,
+    "vocab_size": 100352,
+    "context_length": 4096,
+    "tied_embeddings": false,
+    "rope_theta": 500000,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": true,
+    "weight_bytes": 14597276128,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": false,
+    "note": "Metadata pinned to the revision above; weights are not loaded here."
+   }
+  },
+  {
+   "id": "deepseek-r1-distill-qwen-1.5b",
+   "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+   "repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+   "family": "DeepSeek-R1-Distill",
+   "tuning": "reasoning distillation (Qwen2 base)",
+   "architecture": "Qwen2ForCausalLM",
+   "model_type": "qwen2",
+   "runnable": true,
+   "slot": "d",
+   "status_reason": "DeepSeek's R1 reasoning distilled into a Qwen2 1.5B (MIT). Qwen2 architecture, so the base engine runs it unchanged; checkpoint downloaded with owner approval and verified against the official hashes. It reasons in a <think> block first, so short token budgets may end mid-reasoning.",
+   "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+   "released": "2025-01-20",
+   "benchmark": {
+    "label": "MATH-500",
+    "value": 83.9,
+    "protocol": "pass@1 · reasoning"
+   },
+   "license": {
+    "id": "mit",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "config": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/config.json"
+   },
+   "metadata": {
+    "parameters": 1777088000,
+    "layers": 28,
+    "hidden_size": 1536,
+    "attention_heads": 12,
+    "kv_heads": 2,
+    "head_dim": 128,
+    "mlp_intermediate": 8960,
+    "vocab_size": 151936,
+    "context_length": 131072,
+    "tied_embeddings": false,
+    "rope_theta": 10000,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": false,
+    "weight_bytes": 3554214621,
+    "mixture_of_experts": false
+   },
+   "provenance": {
+    "verified": true,
+    "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "weights_sha256": "58858233513d76b8703e72eed6ce16807b523328188e13329257fb9594462945",
+    "weights_bytes": 3554214621
+   }
+  },
+  {
+   "id": "granite-4.0-h-micro",
+   "label": "Granite-4.0-H-Micro",
+   "repo": "ibm-granite/granite-4.0-h-micro",
+   "family": "Granite 4.0 · IBM",
+   "tuning": "instruction-tuned (hybrid MoE)",
+   "architecture": "GraniteMoeHybridForCausalLM",
+   "model_type": "granitemoehybrid",
+   "runnable": false,
+   "slot": null,
+   "status_reason": "IBM Granite 4.0 (Apache-2.0) — a hybrid Mamba/transformer mixture-of-experts. Its hybrid architecture is far outside the Qwen2 transformer engine, and it is not cached. Catalog/reference only.",
+   "revision": "d5f01a3ea75f088947be3aae039f4ad52837dfde",
+   "released": "2025-09-16",
+   "benchmark": {
+    "label": "MMLU",
+    "value": 67.4,
+    "protocol": "5-shot (model card)"
+   },
+   "license": {
+    "id": "apache-2.0",
+    "osi_open_source": true,
+    "gated": false,
+    "note": "OSI-approved open-source licence.",
+    "source": "https://huggingface.co/ibm-granite/granite-4.0-h-micro/blob/d5f01a3ea75f088947be3aae039f4ad52837dfde/LICENSE"
+   },
+   "source_links": {
+    "model_card": "https://huggingface.co/ibm-granite/granite-4.0-h-micro",
+    "config": "https://huggingface.co/ibm-granite/granite-4.0-h-micro/blob/d5f01a3ea75f088947be3aae039f4ad52837dfde/config.json"
+   },
+   "metadata": {
+    "parameters": 3191396096,
+    "layers": 40,
+    "hidden_size": 2048,
+    "attention_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "mlp_intermediate": 8192,
+    "vocab_size": 100352,
+    "context_length": 131072,
+    "tied_embeddings": true,
+    "rope_theta": 10000,
+    "stored_dtype": "bfloat16",
+    "weight_format": "safetensors",
+    "sharded": true,
+    "weight_bytes": 6382844048,
+    "mixture_of_experts": true
+   },
+   "provenance": {
+    "verified": false,
+    "note": "Metadata pinned to the revision above; weights are not loaded here."
+   }
+  }
+ ]
+}
